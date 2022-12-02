@@ -3,8 +3,11 @@
 def to_int(li):
 	return_list = []
 	for element in li:
-		return_list.append(int(element))
-		
+		if element == "":
+                        pass
+                else:
+                        return_list.append(int(element))
+                        
 	return return_list
 	
 # Function to check the highest calorie in the calorie_list
