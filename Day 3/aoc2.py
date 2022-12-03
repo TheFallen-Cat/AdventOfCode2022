@@ -28,11 +28,12 @@ del main_list[0], main_list[-1]
 
 grouped_list = []
 
+length = len(mainlist[::3])
 x = 0
 
 # To create a list with grouped pair of 3 items
 
-for i in range(100):
+for i in range(length):
 	temp = main_list[x:x+3]
 	grouped_list.append(temp)
 	x += 3
